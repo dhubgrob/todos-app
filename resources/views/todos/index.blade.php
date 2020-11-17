@@ -24,6 +24,10 @@ Todos Page
                         {{ $todo->name }}
 
                         <a href="./todos/{{$todo->id}}" class="btn btn-primary btn-sm float-right">View</a>
+                        
+                        @if( $todo->completed == false )
+                        <a href="./todos/{{$todo->id}}/complete" class="btn btn-success mr-3 btn-sm float-right">Complete</a>
+                        @endif
                     </li>
                     @endforeach
                 </ul>

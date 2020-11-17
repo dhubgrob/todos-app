@@ -18,7 +18,8 @@
             </div>
        
         </div>
-         <a href="./{{ $todo->id }}/edit" class="btn btn-info btn-sm my-5">Edit</a>
+         <a href="./{{ $todo->id }}/edit" class="btn btn-info my-2">Edit</a>
+          <a href="./{{ $todo->id }}/delete" class="btn btn-danger my-2">Delete</a>
     </div>
 </div>
 
